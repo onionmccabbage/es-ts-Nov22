@@ -1,0 +1,69 @@
+ECMAScript and Typescript
+=========================
+
+Toby Dussek - November 2-4
+
+9:30  start
+11:00 coffee
+12:30 lunch
+3:00  tea
+4:30  end
+
+Monday
+- welcome
+- tech check
+- choose a folder to work in: install NodeJS/npm and install typescript globaly
+  - npm install -g typescript
+  - npm install -g ts-node
+  - may need to npm install types for (e.g.) @angular or @react or custom...
+- Modern ECMAScript
+   - common name JavaScript
+   - also known as ECMAScript, ES, ES3, ES5, ES6 etc
+   - sometimes referred to as ESNext, ES6+
+   - recently ES2020, ES2021... (these are all names for JavaScript)
+- TS is DEVELOPMENT TIME ONLY - it NEVER makes it to the end user
+- sometimes it complains 'cannot find console...' - fix with ts-config DOM
+- Typescript why and how: class and interface for typing
+- best pactice declare types/interfaces in another module and import that
+- default ts output is ES3 we can --target es2020 (or relevant version)
+- tidy way to see html pages - liveserver (and web browser events)
+- support for older browsers etc.
+- number data type - whats new
+- classes
+- ways to run and automate
+- begin looking at data sources: JSON etc
+- try a lab exercise
+
+Tuesday
+- where we're at
+- many ways to write functions
+- generics Array<T> 
+- descructuring
+- generator syntax (must use 'function*')
+- is TS mainly just for type safety? No, also has language engine for code completion/introspection
+- types or interface (or hybrid) - mainly aim for interface, then derive other types
+- when/why you would use an Enum, Literal, tuple, Type, Interface 
+  (how to choose one over another depending on what you are doing)
+- https://webpack.js.org/guides/typescript/
+- Promises
+- conventions, best practice, preference...
+- what if the API changes - how can we allow the 'rest' of the arguments?
+  (or ignore additional arguments from an interface)
+- type guards - write logical 'if' when we need to ensure types manually
+- more on tsconfig
+- npm init
+- Brief overview of ReactJS (and the ReactJS Typescript template)
+- review exercise
+
+Wednesday
+- interface, class, implements, extends....
+- more on classes
+- more on modules and import (module.exports, type='module' old-skool commonJS etc.)
+			in html... <script module></script>
+- Observables and RxJS - lifecycle
+- Array<T> and T[] are identical - it's a style choice
+- final lab 
+- where to go next 
+  https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html
+- end of course feedback
+
