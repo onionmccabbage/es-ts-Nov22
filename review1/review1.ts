@@ -1,9 +1,11 @@
+type Completed = boolean | "archived" | "pending" | "deleted"
+
 const todos:ToDo[] = [ // or Array<ToDo>
     {
       "userId": 1,
       "id": 1,
       "title": "delectus aut autem",
-      "completed": false
+      "completed": "archived"
     },
     {
       "userId": 1,
@@ -52,7 +54,7 @@ interface ToDo {
     userId:number
     id:number
     title:string
-    completed:boolean | 'archived'
+    completed:Completed  // boolean | 'archived'
 }
 
 // consume some ToDo items
