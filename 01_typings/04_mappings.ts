@@ -32,11 +32,15 @@ namespace Options_Terse {
     type ReadOnlyOptions<T> = { readonly [k in keyof T]: T[k] }
     type OptionalOptions<T> = { [k in keyof T]?: T[k]} // T[k]=='material'? T[k]: T[k] }
     type NullableOptions<T> = { [k in keyof T]: T[k] | null }
+    
+    // we can exclude members (see https://www.typescriptlang.org/docs/handbook/2/mapped-types.html )
+    type OptSomeOptions<T>  = { [k in keyof T as Exclude<k, "material">]?: T[k] }
 
     // make our new types by mapping
     type ReadOnly = ReadOnlyOptions<Options>
     type Optional = OptionalOptions<Options>
     type Nullable = NullableOptions<Options>
+    
 
     // make use of our new types
     const brick:ReadOnly = {
@@ -54,4 +58,5 @@ namespace Options_Terse {
     const silk:Optional = {
         backlight : true
     }
+
 }
