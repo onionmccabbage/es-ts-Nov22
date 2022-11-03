@@ -1,15 +1,12 @@
 {
     "compilerOptions": {
-        "strictNullChecks": false,
+        "strictNullChecks": true,
         "lib": [
             "ES2020",
             "DOM"
         ],
         "target": "ES2020",
         "moduleResolution": "Node",
-        "resolveJsonModule": true,
-        "outDir": "dist",
-        "noImplicitAny": false
-    },
-    "include": ["src"]
+        "resolveJsonModule": true
+    }
 }

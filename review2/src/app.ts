@@ -55,4 +55,4 @@ const images: HTMLElement = document.getElementById("images");
 fetch(myURL)
     .then((response) => response.json())
 // uncomment the following line to also see all the image data
-    .then((photos) => images.innerHTML = getListOfPhotos(photos));
+    // .then((photos) => images.innerHTML = getListOfPhotos(photos));

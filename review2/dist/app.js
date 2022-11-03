@@ -48,6 +48,6 @@ fetchFromAPI()
 const myURL = `https://jsonplaceholder.typicode.com/photos`;
 const images = document.getElementById("images");
 fetch(myURL)
-    .then((response) => response.json())
-    // uncomment the following line to also see all the image data
-    .then((photos) => images.innerHTML = getListOfPhotos(photos));
+    .then((response) => response.json());
+// uncomment the following line to also see all the image data
+// .then((photos) => images.innerHTML = getListOfPhotos(photos));

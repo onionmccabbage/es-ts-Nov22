@@ -13,4 +13,14 @@
     const a_n:number[] = [4,3,2]
     console.log( zeroElement(a_s) )
     console.log( zeroElement(a_n) )
+
+    // we can have multiple generic types (use a comma)
+    // see https://www.typescriptlang.org/docs/handbook/2/generics.html#using-type-parameters-in-generic-constraints
+    const zeroElementMult = <T, Q>(a:T[], b?:Q[]):T=>{ // or (a:Array<T>)
+        return a[0] // this will work for ANY array of ANY type
+    }
+
+    console.log( zeroElementMult(a_s) )
+    console.log( zeroElementMult(a_n) )
+
 }
