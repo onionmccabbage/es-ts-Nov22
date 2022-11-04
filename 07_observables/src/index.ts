@@ -9,7 +9,7 @@ const r:HTMLElement = document.getElementById('results')
 const keyup$ = Rx.Observable.fromEvent(s, 'keyup') // trailing $ indicates an Observable
 
 // we can decide what to do with our observable (aka 'publisher')
-keyup$
+keyup$ // here keycode is one of the members returned by a KeyboardEvent (within our Observable)
     .pluck('keycode') // case sensitive (aka a 'subscriber')
 
 // we can subscribe to our observable
