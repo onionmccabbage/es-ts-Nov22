@@ -57,6 +57,7 @@ const clearResults = (container:HTMLElement)=>{
 // here is our observable
 const cat$ = Rx.Observable.fromEvent(searchBox, 'keyup')
 cat$
+    .debounceTime(700) // give the user 700ms between checks
     .pluck('target', 'value') // target is where the event originated, value is the key code
     .map( (query:string)=>{
         return suggest(categories, query)
