@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c43970a3.css",
+    "main.js": "/static/js/main.d1a8e591.js",
+    "static/media/wookie.jpeg": "/static/media/wookie.49feb44c780f5d583bf1.jpeg",
+    "static/media/droid.jpeg": "/static/media/droid.67a7a003bd6846c80b52.jpeg",
+    "static/media/human.jpeg": "/static/media/human.b4aaf746ecd2a0cbe45c.jpeg",
+    "index.html": "/index.html",
+    "main.c43970a3.css.map": "/static/css/main.c43970a3.css.map",
+    "main.d1a8e591.js.map": "/static/js/main.d1a8e591.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c43970a3.css",
+    "static/js/main.d1a8e591.js"
+  ]
+}
